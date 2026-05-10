@@ -1,7 +1,4 @@
 import streamlit as st
-
-st.set_page_config(
-    page_title="Hitung Hasil Gojek",
     page_icon="🏍️",
     layout="centered"
 )
@@ -11,11 +8,21 @@ st.write("Aplikasi sederhana untuk menghitung pembagian pendapatan driver Gojek"
 
 st.divider()
 
-pendapatan = st.number_input(
-    "Masukkan Pendapatan Harian (Rp)",
+cash = st.number_input(
+    "Pendapatan Cash (Rp)",
     min_value=0,
     step=1000
 )
+
+qris = st.number_input(
+    "Pendapatan QRIS (Rp)",
+    min_value=0,
+    step=1000
+)
+
+pendapatan = cash + qris
+
+st.write(f"Total Pendapatan: Rp {pendapatan:,.0f}")
 
 persen_bensin = st.slider(
     "Persentase Bensin (%)",
