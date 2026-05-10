@@ -76,4 +76,4 @@ if pendapatan > 0:
 
 st.divider()
 
-st.caption("Dibuat untuk membantu driver Gojek mengatur keuangan harian")
+st.caption("Dibuat untuk membantu Rizky Adi  mengatur keuangan harian")
