@@ -1,4 +1,7 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="Hitung Hasil Gojek",
     page_icon="🏍️",
     layout="centered"
 )
