@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 st.title("🏍️ Hitung Hasil Gojek")
-st.write("Aplikasi sederhana untuk menghitung pembagian pendapatan driver Gojek")
+st.write("Aplikasi untuk menghitung pembagian pendapatan driver Gojek")
 
 st.divider()
 
